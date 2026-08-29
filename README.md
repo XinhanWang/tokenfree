@@ -50,7 +50,8 @@ tokenfree/
   `https://wangxinhan.cn/tokenfree/sitemap.xml` 直接提交到 Google Search Console / 必应站长即可。
 - `robots.txt` — 爬虫**只读取域名根目录**的 robots.txt（`https://wangxinhan.cn/robots.txt`，
   由 `XinhanWang.github.io` 仓库控制），所以本仓库这份对现在的项目页不生效，属于「换成独立域名后即可用」的预置文件。
-  要让 sitemap 立刻被发现，请在根仓库的 robots.txt 里加一行 `Sitemap: https://wangxinhan.cn/tokenfree/sitemap.xml`。
+  根仓库的 robots.txt 已于 2026-08-29 补上 `Sitemap: https://wangxinhan.cn/tokenfree/sitemap.xml`
+  （robots.txt 允许多条 `Sitemap` 行），爬虫从域名根目录即可发现本站的 sitemap。
 - **没有 `CNAME` 文件**，这是有意的：自定义域名 `wangxinhan.cn` 已经绑在 `XinhanWang.github.io` 仓库上，
   同一账号下两个仓库不能绑同一个域名（Pages 会报 *domain already taken*）。
   若以后要给本站独立域名，新建一个子域（例如 `token.wangxinhan.cn`）并在 DNS 加
@@ -72,7 +73,14 @@ tokenfree/
 2. 卡片上的 `data-type`（`official` / `free` / `paid`）和 `data-stab`（`ok` / `warn` / `risk`）驱动顶部筛选栏，新增卡片必须带这两个属性；`data-stab` 与卡片右上角的 `badge-ok` / `badge-warn` / `badge-risk` 徽章保持一致。
 3. 各渠道的「注册直达」按钮用的是攻略里的**邀请 / 推广链接**，页面顶部和页脚都有相应说明。换号或换链接时记得同步 `index.html` 里对应的 `href`。
 4. 新增截图放 `assets/img/`，用 `<figure class="shot"><img loading="lazy">` 包一层就能获得灯箱预览。
-5. 更新 PDF 时替换 `tokenfree-guide.pdf`（文件名保持 ASCII，避免链接需要转义）；同步更新 `tokenfree-guide.md`。
+5. `tokenfree-guide.pdf` 由 `tokenfree-guide.md` 生成，改完 `.md` 重新跑一遍即可（脚本在仓库外的
+   `tools/build-pdf.mjs`：无头 Edge/Chrome 打印 A4，链接是可点击的 `/Link` 注解，AFF 链接不会丢）：
+
+   ```bash
+   node tools/build-pdf.mjs tokenfree/tokenfree-guide.md tokenfree/tokenfree-guide.pdf
+   ```
+
+   文件名保持 ASCII，避免链接需要转义。
 6. 接入教程里请求地址的规则是：**Codex 加 `/v1`，Claude 不加**，改文案时别把这两者混掉。
 
 本地预览：任意静态服务器指向本目录即可，例如

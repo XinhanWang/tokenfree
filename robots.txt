@@ -4,8 +4,9 @@
 # 注意：爬虫只读取域名根目录的 robots.txt（https://wangxinhan.cn/robots.txt），
 # 那份由 XinhanWang.github.io 仓库控制。本文件对当前的项目页路径不生效，
 # 作用是（1）本站将来迁到独立域名时可直接用，（2）在仓库里明确声明 sitemap 位置。
-# 想让 sitemap 立刻被发现，请在根仓库的 robots.txt 里加上下面那行 Sitemap，
-# 或把 sitemap 地址直接提交到 Google Search Console / 必应站长平台。
+# 根仓库的 robots.txt 已于 2026-08-29 加上了本站 sitemap（多条 Sitemap 行是合法写法），
+# 所以爬虫从域名根目录就能发现它；想更快收录可以再手动提交到
+# Google Search Console / 必应站长平台。
 
 User-agent: *
 Allow: /
