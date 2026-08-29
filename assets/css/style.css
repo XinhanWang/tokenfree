@@ -531,6 +531,18 @@ figure.shot figcaption {
 .step p { margin: 0 0 10px; font-size: 14.3px; color: var(--muted); line-height: 1.75; }
 .step p:last-child { margin-bottom: 0; }
 .step p strong { color: var(--text-strong); font-weight: 650; }
+.step ul { margin: 0 0 10px; padding-left: 4px; list-style: none; }
+.step ul li {
+  position: relative; padding-left: 20px; margin-bottom: 7px;
+  font-size: 14.3px; color: var(--muted); line-height: 1.75;
+}
+.step ul li:last-child { margin-bottom: 0; }
+.step ul li::before {
+  content: ""; position: absolute; left: 4px; top: .68em;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+}
+.step ul li strong { color: var(--text-strong); font-weight: 650; }
 
 /* ---------- engagement (like + comments) ---------- */
 .engage {

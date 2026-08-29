@@ -1,0 +1,12 @@
+# TokenFree · Token 自由攻略
+# https://xinhanwang.github.io/tokenfree/
+#
+# 注意：本站是 GitHub Pages 项目页，实际生效的 robots.txt 只能放在域名根目录
+# （https://xinhanwang.github.io/robots.txt），该文件由 XinhanWang.github.io 仓库控制。
+# 这份文件是为本站独立部署到自有域名时准备的，同时也用于声明 sitemap 位置。
+
+User-agent: *
+Allow: /
+
+# 站点地图
+Sitemap: https://xinhanwang.github.io/tokenfree/sitemap.xml
