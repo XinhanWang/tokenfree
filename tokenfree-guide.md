@@ -1,10 +1,10 @@
 # Token 自由攻略（持续更新）
 
-> 在线阅读：<https://xinhanwang.github.io/tokenfree/>　·　PDF 原版：[tokenfree-guide.pdf](tokenfree-guide.pdf)
+> 在线阅读：<https://wangxinhan.cn/tokenfree/>　·　PDF 原版：[tokenfree-guide.pdf](tokenfree-guide.pdf)
 
 本攻略旨在分享**稳定好用的大模型智能体词元来源**，减小信息差，长期更新，欢迎大家点赞评论转发，拿走不谢！
 
-- 欢迎大家在[评论区](https://xinhanwang.github.io/tokenfree/#comments)留下你知道的更多免费 token 渠道，有疑问建议也可以评论区交流！
+- 欢迎大家在[评论区](https://wangxinhan.cn/tokenfree/#comments)留下你知道的更多免费 token 渠道，有疑问建议也可以评论区交流！
 - 欢迎大家通过提 [issue](https://github.com/XinhanWang/tokenfree/issues/new) 或者 [PR](https://github.com/XinhanWang/tokenfree/pulls) 提交渠道，共同维护！
 - 推荐**先优先使用公益站的免费额度**，不够再使用低价稳定的付费中转站。
 - 中转站都是**官方满血模型**，不需要担心降智的问题！

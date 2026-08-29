@@ -2,20 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--
+    地址用自定义域名 wangxinhan.cn：https://xinhanwang.github.io/tokenfree/ 会 301
+    跳到这里，sitemap 里不应该填会重定向的 URL。
+  -->
   <url>
-    <loc>https://xinhanwang.github.io/tokenfree/</loc>
+    <loc>https://wangxinhan.cn/tokenfree/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://xinhanwang.github.io/tokenfree/tokenfree-guide.md</loc>
+    <loc>https://wangxinhan.cn/tokenfree/tokenfree-guide.md</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xinhanwang.github.io/tokenfree/tokenfree-guide.pdf</loc>
+    <loc>https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

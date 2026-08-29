@@ -2,9 +2,9 @@
 
 持续更新的大模型智能体 Token 来源攻略，用 GitHub Pages 部署的单页静态站点。
 
-线上地址：<https://xinhanwang.github.io/tokenfree/>
+线上地址：<https://wangxinhan.cn/tokenfree/>（`https://xinhanwang.github.io/tokenfree/` 会 301 跳到这里）
 Markdown 原文：[tokenfree-guide.md](tokenfree-guide.md)
-PDF 原版：<https://xinhanwang.github.io/tokenfree/tokenfree-guide.pdf>
+PDF 原版：<https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf>
 
 ## 共同维护
 
@@ -42,17 +42,20 @@ tokenfree/
 
 ## SEO 与站点配置
 
+站点的规范地址（canonical）是 **`https://wangxinhan.cn/tokenfree/`** —— `xinhanwang.github.io/tokenfree/`
+会被 GitHub 301 跳到自定义域名，所以 `index.html` 的 canonical / `og:url`、`sitemap.xml`、`robots.txt`
+统一用自定义域名，避免把会重定向的 URL 交给爬虫。
+
 - `sitemap.xml` — 列出首页与两份原文（`.md` / `.pdf`）。放在子目录里依然有效，把
-  `https://xinhanwang.github.io/tokenfree/sitemap.xml` 直接提交到 Google Search Console / 必应站长即可。
-- `robots.txt` — 爬虫**只读取域名根目录**的 robots.txt（`https://xinhanwang.github.io/robots.txt`，
+  `https://wangxinhan.cn/tokenfree/sitemap.xml` 直接提交到 Google Search Console / 必应站长即可。
+- `robots.txt` — 爬虫**只读取域名根目录**的 robots.txt（`https://wangxinhan.cn/robots.txt`，
   由 `XinhanWang.github.io` 仓库控制），所以本仓库这份对现在的项目页不生效，属于「换成独立域名后即可用」的预置文件。
-  要让 sitemap 立刻被发现，请在根仓库的 robots.txt 里加一行 `Sitemap: https://xinhanwang.github.io/tokenfree/sitemap.xml`。
+  要让 sitemap 立刻被发现，请在根仓库的 robots.txt 里加一行 `Sitemap: https://wangxinhan.cn/tokenfree/sitemap.xml`。
 - **没有 `CNAME` 文件**，这是有意的：自定义域名 `wangxinhan.cn` 已经绑在 `XinhanWang.github.io` 仓库上，
-  同一账号下两个仓库不能绑同一个域名（Pages 会报 *domain already taken*）。本站因此同时可从
-  `https://xinhanwang.github.io/tokenfree/` 和 `http://wangxinhan.cn/tokenfree/` 访问。
+  同一账号下两个仓库不能绑同一个域名（Pages 会报 *domain already taken*）。
   若以后要给本站独立域名，新建一个子域（例如 `token.wangxinhan.cn`）并在 DNS 加
   `CNAME token → xinhanwang.github.io`，再把该子域写进本仓库的 `CNAME`，同时同步
-  `index.html` 的 canonical、`sitemap.xml` 与 `robots.txt` 里的地址。
+  `index.html` 的 canonical / `og:url`、`sitemap.xml` 与 `robots.txt` 里的地址。
 
 ## 第三方组件
 
