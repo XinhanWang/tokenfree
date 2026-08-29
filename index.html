@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TokenFree · Token 自由攻略｜稳定好用的大模型 Token 来源汇总</title>
+<meta name="description" content="持续更新的大模型智能体 Token 来源攻略：官方免费 Agent 工具、低价稳定的付费中转站、公益站每日签到额度，以及 cc-switch 接入教程。减小信息差，拿走不谢。">
+<meta name="keywords" content="Token,大模型,Claude,GPT,Codex,Claude Code,公益站,中转站,cc-switch,AIHub,Agent Router,Anyrouter,免费额度">
+<meta name="author" content="XinhanWang">
+<meta name="theme-color" content="#080b13">
+<link rel="canonical" href="https://xinhanwang.github.io/tokenfree/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TokenFree · Token 自由攻略">
+<meta property="og:description" content="持续更新的大模型智能体 Token 来源攻略：免费公益站、低价中转站与 Agent 工具接入教程。">
+<meta property="og:url" content="https://xinhanwang.github.io/tokenfree/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='58' font-family='system-ui,sans-serif' font-weight='800' fill='%23fff' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">T</span>
+      <span class="brand-text">TokenFree<small>TOKEN 自由攻略</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a class="nav-link" href="#official">官方工具</a>
+      <a class="nav-link" href="#paid">付费中转</a>
+      <a class="nav-link" href="#free">免费公益</a>
+      <a class="nav-link" href="#linuxdo">L 站专区</a>
+      <a class="nav-link" href="#setup">接入教程</a>
+      <a class="nav-link" href="#comments">评论区</a>
+      <span class="nav-tail">
+        <a class="icon-btn" href="https://github.com/XinhanWang/tokenfree" target="_blank" rel="noopener" title="GitHub 仓库" aria-label="GitHub 仓库">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-2.92-.89-2.92-3.15 0-.64.23-1.17.6-1.58-.06-.15-.26-.76.06-1.58 0 0 .49-.16 1.61.6a5.4 5.4 0 0 1 2.94 0c1.12-.77 1.61-.6 1.61-.6.32.82.12 1.43.06 1.58.37.41.6.94.6 1.58 0 2.27-1.14 2.95-2.93 3.15.29.25.55.74.55 1.5 0 1.08-.01 1.96-.01 2.23 0 .21.15.46.55.38A7.99 7.99 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+        <button class="icon-btn" id="themeBtn" title="切换深色 / 浅色" aria-label="切换主题"></button>
+      </span>
+    </nav>
+
+    <button class="icon-btn nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-badge">
+      <span class="dot"></span>
+      <b>持续更新</b>&nbsp;·&nbsp;最近整理于 <span id="updated">2026 年 8 月</span>
+    </span>
+
+    <h1>让 Token 不再是<br><span class="grad">你用大模型的门槛</span></h1>
+
+    <p class="hero-lead">
+      本攻略旨在分享<strong>稳定好用的大模型智能体词元来源</strong>，减小信息差，长期更新。
+      欢迎大家点赞、评论、转发，拿走不谢！
+    </p>
+    <p class="hero-lead">
+      推荐<strong>先优先使用公益站的免费额度</strong>，不够再使用低价稳定的付费中转站。
+      中转站都是官方满血模型，不需要担心降智的问题。
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#free">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/></svg>
+        直达免费公益站
+      </a>
+      <a class="btn btn-ghost" href="#setup">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+        查看接入教程
+      </a>
+      <a class="btn btn-ghost" href="#comments">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+        补充渠道 / 提问
+      </a>
+      <a class="btn btn-ghost" href="tokenfree-guide.pdf" target="_blank" rel="noopener" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        下载 PDF 原版
+      </a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-num">8<i>个</i></div><div class="stat-label">已收录渠道</div></div>
+      <div class="stat"><div class="stat-num">5<i>个</i></div><div class="stat-label">免费公益站</div></div>
+      <div class="stat"><div class="stat-num">150<i>刀/天</i></div><div class="stat-label">公益额度合计上限</div></div>
+      <div class="stat"><div class="stat-num">0<i>元</i></div><div class="stat-label">入门成本</div></div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+<div class="layout">
+
+  <aside class="toc" aria-label="目录">
+    <div class="toc-title">目录</div>
+    <ol>
+      <li><a href="#howto">使用建议</a></li>
+      <li><a href="#official">官方 Agent 工具</a></li>
+      <li><a href="#paid">付费中转站</a></li>
+      <li><a href="#free">免费公益站</a></li>
+      <li><a href="#linuxdo">L 站专区</a></li>
+      <li><a href="#setup">接入教程</a></li>
+      <li><a href="#comments">评论 & 点赞</a></li>
+    </ol>
+  </aside>
+
+  <div class="content">
+
+    <!-- ============ 使用建议 ============ -->
+    <section class="section reveal" id="howto">
+      <div class="section-head">
+        <span class="eyebrow">Start here</span>
+        <h2>三条使用建议</h2>
+        <p class="section-desc">先看完这三点，再往下挑渠道，能省掉大半踩坑时间。</p>
+      </div>
+
+      <div class="tips">
+        <div class="tip">
+          <h3><span class="tip-ico">🎁</span>先免费，后付费</h3>
+          <p>优先把公益站的每日签到额度用掉，额度不够再上低价稳定的付费中转站，不必一开始就充钱。</p>
+        </div>
+        <div class="tip">
+          <h3><span class="tip-ico">🧠</span>不用担心降智</h3>
+          <p>这里列的中转站走的都是<strong>官方满血模型</strong>，和官方直连的效果一致，不存在阉割版的问题。</p>
+        </div>
+        <div class="tip">
+          <h3><span class="tip-ico">🔀</span>多号 + 多站并行</h3>
+          <p>单站都有窗口和限额，建议同时准备 2~3 个渠道，用 cc-switch 一键切换，哪个通用哪个。</p>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <span class="callout-ico">💬</span>
+        <div>欢迎在<a href="#comments">评论区</a>留下你知道的更多免费 Token 渠道，有疑问、建议也可以在评论区交流！</div>
+      </div>
+
+      <div class="callout">
+        <span class="callout-ico">🤝</span>
+        <div>页面里各渠道的「注册直达」按钮为<strong>邀请 / 推广链接</strong>，通过它注册通常双方都能拿到一点额度奖励，对你没有额外成本；如果不希望走推广，直接搜索官网注册同样可用。</div>
+      </div>
+    </section>
+    <!-- ============ 筛选栏 ============ -->
+    <div class="filters reveal" id="filters">
+      <span class="filters-label">类型</span>
+      <button class="chip active" data-filter="type" data-value="all">全部</button>
+      <button class="chip" data-filter="type" data-value="official">官方工具</button>
+      <button class="chip" data-filter="type" data-value="free">免费公益</button>
+      <button class="chip" data-filter="type" data-value="paid">付费中转</button>
+      <span class="filters-label" style="margin-left:10px">稳定性</span>
+      <button class="chip active" data-filter="stab" data-value="all">不限</button>
+      <button class="chip" data-filter="stab" data-value="ok">全时段稳定</button>
+      <button class="chip" data-filter="stab" data-value="warn">绝大部分时段</button>
+      <button class="chip" data-filter="stab" data-value="risk">小部分时段</button>
+    </div>
+    <p class="filter-empty" id="filterEmpty">没有符合当前筛选条件的渠道，换个条件试试 🙃</p>
+
+    <!-- ============ 官方 Agent 工具 ============ -->
+    <section class="section reveal" id="official">
+      <div class="section-head">
+        <span class="eyebrow">Official</span>
+        <h2>官方 Agent 工具</h2>
+        <p class="section-desc">大厂官方出品、不用折腾 API，注册即用的免费 Agent 产品。</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-type="official" data-stab="ok">
+          <div class="card-head">
+            <span class="card-logo">T</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">Trae IDE &amp; Trae Work
+                <span class="badge badge-tag">官方免费</span>
+              </h3>
+              <p class="card-sub">字节跳动旗下 Agent 产品 · 免费用上顶尖国产大模型</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-ok"><span class="bdot"></span>全时段可用</span>
+              <a class="btn btn-primary btn-sm" href="https://www.trae.cn/work-fission/BWMBDDTW44NT?utm_source=copy_link&amp;utm_medium=friends_invite" target="_blank" rel="noopener">Trae Work 邀请注册</a>
+              <a class="btn btn-ghost btn-sm" href="https://www.trae.cn/" target="_blank" rel="noopener">Trae IDE 官网</a>
+              <a class="btn btn-ghost btn-sm" href="https://www.trae.ai/" target="_blank" rel="noopener">国际版官网</a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">额度形式</div><div class="meta-v accent">每日签到领积分</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">无 · 直接注册</div></div>
+              <div class="meta-item"><div class="meta-k">推荐模型</div><div class="meta-v">Deepseek v4 flash / GLM5.3</div></div>
+              <div class="meta-item"><div class="meta-k">主要缺点</div><div class="meta-v">高峰期需要排队</div></div>
+            </div>
+
+            <ul>
+              <li><strong>Trae IDE</strong> 面向程序员，是专业的 AI 编程工具；<strong>Trae Work</strong> 是 AI 工作助手，能整理论文综述、写 PPT、分析 Excel 等日常工作。</li>
+              <li>Trae IDE <em>排队很严重</em>；Trae Work 排队一般几分钟，还能接受，日常用建议直接上 Trae Work。</li>
+              <li>建议选择 <code class="inline">Deepseek v4 flash</code> 正式版或者 <code class="inline">GLM5.3</code>，倍率低、性价比高。</li>
+              <li>8 月起改成<strong>积分制</strong>，每天签到领取积分，记得别断签。</li>
+            </ul>
+
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/trae-work.png" alt="Trae Work 界面与内置模型列表" loading="lazy">
+                <figcaption>Trae Work 内置模型列表：GLM-5.3 / Seed 系列均有会员补贴倍率</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============ 付费中转站 ============ -->
+    <section class="section reveal" id="paid">
+      <div class="section-head">
+        <span class="eyebrow">Paid &amp; Cheap</span>
+        <h2>低价稳定的付费中转站</h2>
+        <p class="section-desc">公益额度不够用时的兜底方案：按量计费、倍率低，全天候可用不看运气。</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-type="paid" data-stab="ok">
+          <div class="card-head">
+            <span class="card-logo">A</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">AIHub <span class="badge badge-tag">聚合中转</span></h3>
+              <p class="card-sub">聚合全网 GPT 中转站渠道，自己挑倍率低又稳定的分组</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-ok"><span class="bdot"></span>全时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://aihub.top/register?aff=56323S4F7BBN" target="_blank" rel="noopener">注册直达</a>
+              <a class="btn btn-ghost btn-sm" href="https://aihub.top/" target="_blank" rel="noopener">官网</a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">计费方式</div><div class="meta-v">按量计费 · 倍率最低 0.02x</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">无</div></div>
+              <div class="meta-item"><div class="meta-k">适用客户端</div><div class="meta-v">Codex / ChatGPT 客户端</div></div>
+              <div class="meta-item"><div class="meta-k">挑分组要点</div><div class="meta-v accent">倍率低 + 可用率高</div></div>
+            </div>
+
+            <ul>
+              <li>在<strong>供应商大厅</strong>里能直接看到各分组的倍率、首 Token 延迟、缓存命中率和可用率曲线，<strong>挑倍率低而且可用稳定的分组</strong>使用。</li>
+              <li>创建 API Key 时<em>需要选择对应的分组</em>，选错分组会走到贵的渠道上。</li>
+              <li>在 cc-switch 里面配置 API Key 和请求地址，<strong>重启 ChatGPT 客户端</strong>之后就可以用了。</li>
+            </ul>
+
+            <div class="copyrow"><span class="ck">官网</span><code>https://aihub.top/</code><button class="copy-btn">复制</button></div>
+            <div class="copyrow"><span class="ck">API 端点</span><code>https://aihub.top/v1</code><button class="copy-btn">复制</button></div>
+            <div class="copyrow"><span class="ck">优化端点</span><code>https://aihub.dog</code><button class="copy-btn">复制</button></div>
+
+            <div class="shots two">
+              <figure class="shot">
+                <img src="assets/img/aihub-vendors.png" alt="AIHub 供应商大厅的分组倍率与可用率" loading="lazy">
+                <figcaption>供应商大厅：对比倍率、TPS 与可用率再挑分组</figcaption>
+              </figure>
+              <figure class="shot">
+                <img src="assets/img/aihub-apikey.png" alt="AIHub 创建 API 密钥并选择分组" loading="lazy">
+                <figcaption>创建 API Key 时务必选对分组</figcaption>
+              </figure>
+            </div>
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/ccswitch-aihub.png" alt="在 cc-switch 中填写 AIHub 的 API Key 与请求地址" loading="lazy">
+                <figcaption>cc-switch 里填好官网链接、API Key 与请求地址即可</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-type="paid" data-stab="ok">
+          <div class="card-head">
+            <span class="card-logo">星</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">君的星辰 <span class="badge badge-tag">特惠渠道</span></h3>
+              <p class="card-sub">GPT 系列与其他模型都有特惠分组，Grok 尤其便宜</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-ok"><span class="bdot"></span>全时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://ai.centos.hk/register?aff=5JZ8" target="_blank" rel="noopener">注册直达</a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">计费方式</div><div class="meta-v">按量计费 · 特惠分组 0.04x 起</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">无</div></div>
+              <div class="meta-item"><div class="meta-k">亮点模型</div><div class="meta-v accent">Grok 4.6 很便宜</div></div>
+              <div class="meta-item"><div class="meta-k">可选分组</div><div class="meta-v">DeepSeek / Kimi / MiniMax / X-AI / Claude</div></div>
+            </div>
+
+            <ul>
+              <li>模型广场里按供应商分组，<strong>GPT 系列模型和其他模型都有特惠渠道</strong>，同一个模型对比几个分组的倍率再下手。</li>
+              <li><code class="inline">X-AI 特惠</code> 分组倍率低到 0.04x，<strong>Grok 4.6 很便宜了</strong>，输入 ￥0.08 / 1M tokens。</li>
+              <li>接入方式与 AIHub 一致，在 cc-switch 里配 API Key + 请求地址即可。</li>
+            </ul>
+
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/junstar-models.png" alt="君的星辰模型广场的分组与倍率" loading="lazy">
+                <figcaption>左侧分组标着倍率，X-AI 特惠 0.04x 是捡漏区</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============ 免费公益站（无需 L 站） ============ -->
+    <section class="section reveal" id="free">
+      <div class="section-head">
+        <span class="eyebrow">Free · No L-site</span>
+        <h2>无需 L 站账号登录的公益站</h2>
+        <p class="section-desc">只要一个有年份的 GitHub 账号就能薅，每天签到就有额度，是最推荐的入门方式。</p>
+      </div>
+
+      <div class="callout">
+        <span class="callout-ico">🪪</span>
+        <div>这几家都卡 <strong>GitHub 账号注册年限</strong>。没有老号的话，去闲鱼花 <strong>15 RMB</strong> 左右就能买一个，属于一次性投入。</div>
+      </div>
+
+      <div class="cards" style="margin-top:20px">
+        <article class="card" data-type="free" data-stab="ok">
+          <div class="card-head">
+            <span class="card-logo">J</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">JustDoWork <span class="badge badge-tag">免费公益</span></h3>
+              <p class="card-sub">每日签到额度最高，Claude 系列跑 Agent 的首选</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-ok"><span class="bdot"></span>全时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://api.justwoker.icu/register?aff=yvly" target="_blank" rel="noopener">注册直达</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">每日额度</div><div class="meta-v accent">签到 20 ~ 30 刀</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">GitHub 账号 ≥ 1 年</div></div>
+              <div class="meta-item"><div class="meta-k">推荐模型</div><div class="meta-v">claude-opus-5-thinking</div></div>
+              <div class="meta-item"><div class="meta-k">可用模型数</div><div class="meta-v">Anthropic 系列 4 个</div></div>
+            </div>
+            <ul>
+              <li>需要<strong>一年以上的 GitHub 账号</strong>注册（没有可以去闲鱼花 15 RMB 买一个），每天签到有<strong>二十到三十刀</strong>。</li>
+              <li>推荐使用 <code class="inline">claude-opus-5-thinking</code>，模型广场里 opus-5 系列输入输出都只要 $0.6 / 1M tokens 的等效倍率。</li>
+            </ul>
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/justdowork.png" alt="JustDoWork 模型广场的 Claude 系列模型与价格" loading="lazy">
+                <figcaption>JustDoWork 模型广场：claude-opus-5 / opus-5-thinking 都在列</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-type="free" data-stab="ok">
+          <div class="card-head">
+            <span class="card-logo">K</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">KK token <span class="badge badge-tag">免费公益</span></h3>
+              <p class="card-sub">和 JustDoWork 同款玩法，可以两家一起签到轮着用</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-ok"><span class="bdot"></span>全时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://kktoken.cc/sign-up?aff=VnCt" target="_blank" rel="noopener">注册直达</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">每日额度</div><div class="meta-v accent">签到 20 刀</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">GitHub 账号 ≥ 1 年</div></div>
+              <div class="meta-item"><div class="meta-k">推荐模型</div><div class="meta-v">claude-opus-5-thinking</div></div>
+              <div class="meta-item"><div class="meta-k">可用模型数</div><div class="meta-v">Anthropic 系列 4 个</div></div>
+            </div>
+            <ul>
+              <li>同样需要<strong>一年以上的 GitHub 账号</strong>注册（没有可以去闲鱼花 15 RMB 买一个），每天签到有 <strong>20 刀</strong>。</li>
+              <li>推荐使用 <code class="inline">claude-opus-5-thinking</code>。</li>
+              <li>和 JustDoWork 分开签到、分开用，两家凑一起一天有 40~50 刀，日常写代码基本够。</li>
+            </ul>
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/kktoken.png" alt="KKtoken AI 模型广场的 Claude 系列模型" loading="lazy">
+                <figcaption>KKtoken 模型广场：结构与 JustDoWork 几乎一致</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-type="free" data-stab="warn">
+          <div class="card-head">
+            <span class="card-logo">R</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">Agent Router <span class="badge badge-tag">免费公益</span></h3>
+              <p class="card-sub">签到额度高，Claude / GPT 已改为限量分批发放</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-warn"><span class="bdot"></span>绝大部分时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://agentrouter.org/register?aff=97Vc" target="_blank" rel="noopener">注册直达</a>
+              <a class="btn btn-ghost btn-sm" href="https://agentrouter.org" target="_blank" rel="noopener">官网</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">每日额度</div><div class="meta-v accent">签到 25 刀</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">25 年 12 月前的 GitHub 号 / L 站号</div></div>
+              <div class="meta-item"><div class="meta-k">日常推荐</div><div class="meta-v">Deepseek v4 flash / GLM5.3</div></div>
+              <div class="meta-item"><div class="meta-k">Claude / GPT</div><div class="meta-v">每天 07:00、19:00 分批发放</div></div>
+            </div>
+            <ul>
+              <li>需要用 <strong>25 年 12 月之前的 GitHub 账号或者 L 站账号</strong>注册登录。</li>
+              <li>每天签到 <strong>25 刀额度</strong>：<em>退出登录再重新登录就自动签到了</em>，有两个号的话可以领取两遍。</li>
+              <li>Claude 和 GPT 模型现在改成了<strong>限量供应</strong>，每天分两批发放（北京时间 07:00 与 19:00，对应 UTC 23:00 / 11:00），用完即止；本批用完就等下一批。</li>
+              <li>日常可以使用国产模型 <code class="inline">Deepseek v4 flash</code> 和 <code class="inline">GLM5.3</code>，倍率低、不限量，体验更顺。</li>
+              <li>官方公告明确提示：<em>请勿进行无意义的刷额度行为</em>，这类操作会被系统识别并可能导致封号。</li>
+            </ul>
+            <div class="copyrow"><span class="ck">官网</span><code>https://agentrouter.org</code><button class="copy-btn">复制</button></div>
+            <div class="shots two">
+              <figure class="shot">
+                <img src="assets/img/agentrouter-models.png" alt="Agent Router 模型倍率与价格表" loading="lazy">
+                <figcaption>模型倍率表：deepseek-v4-flash / glm-5.3 倍率最低</figcaption>
+              </figure>
+              <figure class="shot">
+                <img src="assets/img/agentrouter-notice.png" alt="Agent Router 关于 Claude / GPT 额度调整的系统公告" loading="lazy">
+                <figcaption>系统公告：Claude / GPT 改为每日分批限量发放</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <article class="card" data-type="free" data-stab="risk">
+          <div class="card-head">
+            <span class="card-logo">C</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">Rawchat <span class="badge badge-tag">免费公益</span></h3>
+              <p class="card-sub">单账号额度最高的 Codex 公益站，缺点是全站窗口太挤</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-risk"><span class="bdot"></span>小部分时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://new.sharedchat.cc/list/#/register?i=8MU5T" target="_blank" rel="noopener">注册直达</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">每日额度</div><div class="meta-v accent">50 刀 / 天</div></div>
+              <div class="meta-item"><div class="meta-k">滚动限额</div><div class="meta-v">每 3 小时 15 刀</div></div>
+              <div class="meta-item"><div class="meta-k">适用客户端</div><div class="meta-v">Codex</div></div>
+              <div class="meta-item"><div class="meta-k">主要缺点</div><div class="meta-v">全站窗口限额太少</div></div>
+            </div>
+            <ul>
+              <li>长期稳定，<strong>支持 GPT 系列模型</strong>，在 Codex 里面使用，每天有 <strong>50 刀额度</strong>，3 小时限额 15 刀。</li>
+              <li>缺点是<em>全站的窗口限额太少了</em>，全站的窗口满了就用不上了 —— 挑冷门时段（深夜 / 清晨）成功率更高。</li>
+            </ul>
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/rawchat.png" alt="Rawchat Codex 公益额度与窗口用量面板" loading="lazy">
+                <figcaption>控制台能看到当日额度和全站 3 小时窗口用量，100% 就得等下个窗口</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============ L 站专区 ============ -->
+    <section class="section reveal" id="linuxdo">
+      <div class="section-head">
+        <span class="eyebrow">LINUX DO</span>
+        <h2>需要 L 站账号登录的公益站</h2>
+        <p class="section-desc">L 站（linux.do）上有很多大模型公益站的羊毛，需要有 L 站账号才能薅到。看上游渠道的账号，号多的时期就能爽用，号少的时期也能维持正常使用。</p>
+      </div>
+
+      <div class="shots two">
+        <figure class="shot">
+          <img src="assets/img/linuxdo-plan.png" alt="L 站社区收益规划：为社区提供 claude、gpt、gemini 等高级 AI 模型" loading="lazy">
+          <figcaption>社区收益规划里明确写着「为社区提供充足的 claude、gpt、gemini 等高级 AI 模型」</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/img/linuxdo-post.png" alt="L 站帖子：把 invite.linuxdo.org 单独加入直连规则" loading="lazy">
+          <figcaption>邀请页打不开时，把 <code class="inline">invite.linuxdo.org</code> 单独加入梯子的直连规则即可</figcaption>
+        </figure>
+      </div>
+
+      <h3 style="margin:34px 0 14px;font-size:19px;color:var(--text-strong);font-weight:700">如何注册 L 站账号</h3>
+      <div class="steps">
+        <div class="step">
+          <h3>有五年以上 GitHub 账号 → 直接官方注册</h3>
+          <p>走 <a href="https://invite.linuxdo.org/" target="_blank" rel="noopener">官方注册入口 invite.linuxdo.org</a>，用 GitHub 授权注册即可，账号年限够就能直接通过。社区主站是 <a href="https://linux.do" target="_blank" rel="noopener">linux.do</a>。</p>
+        </div>
+        <div class="step">
+          <h3>没有老号 → 闲鱼买高级邀请码</h3>
+          <p>去<a href="https://m.tb.cn/h.832H6pK?tk=jVYUgEqmd4O" target="_blank" rel="noopener">闲鱼</a>买一个<strong>高级邀请码</strong>，拿到码之后就可以直接用<strong>邮箱注册</strong>了，不再卡 GitHub 年限。</p>
+        </div>
+        <div class="step">
+          <h3>注册页打不开 → 加直连规则</h3>
+          <p>梯子规则模式下，把 <code class="inline">invite.linuxdo.org</code> <strong>单独加入直连规则</strong>即可，看到「欢迎来到 LINUX DO」就算注册成功。</p>
+        </div>
+      </div>
+
+      <div class="shots" style="max-width:330px;margin:18px auto 0">
+        <figure class="shot">
+          <img src="assets/img/linuxdo-welcome.jpg" alt="linux.do 注册成功后的欢迎页面" loading="lazy">
+          <figcaption>看到这个欢迎页就说明账号已确认</figcaption>
+        </figure>
+      </div>
+      <div class="cards" style="margin-top:34px">
+        <article class="card" data-type="free" data-stab="warn">
+          <div class="card-head">
+            <span class="card-logo">A</span>
+            <div class="card-title-wrap">
+              <h3 class="card-title">Anyrouter <span class="badge badge-tag">需 L 站账号</span></h3>
+              <p class="card-sub">L 站系公益站里最稳的一个，Claude 系列优先</p>
+            </div>
+            <div class="card-actions">
+              <span class="badge badge-warn"><span class="bdot"></span>绝大部分时段稳定可用</span>
+              <a class="btn btn-primary btn-sm" href="https://anyrouter.top/register?aff=EiOD" target="_blank" rel="noopener">注册直达</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <div class="meta-item"><div class="meta-k">每日额度</div><div class="meta-v accent">签到 25 刀</div></div>
+              <div class="meta-item"><div class="meta-k">注册门槛</div><div class="meta-v">L 站账号登录</div></div>
+              <div class="meta-item"><div class="meta-k">推荐模型</div><div class="meta-v">Opus 5</div></div>
+              <div class="meta-item"><div class="meta-k">GPT 系列</div><div class="meta-v">不如 Claude 稳，一般挤不上</div></div>
+            </div>
+            <ul>
+              <li>每天签到 <strong>25 刀额度</strong>，可用模型 17 个，其中 Anthropic 14 个、OpenAI 2 个、Gemini 1 个。</li>
+              <li><strong>GPT 系列模型没有 Claude 系列稳定</strong>，一般挤不上，<em>推荐优先使用 Opus 5</em>。</li>
+              <li>计费公式：分组倍率 × 模型倍率 ×（提示 token 数 + 补全 token 数 × 补全倍率）/ 500000，单位美元。</li>
+            </ul>
+            <div class="shots">
+              <figure class="shot">
+                <img src="assets/img/anyrouter-models.png" alt="Any Router 控制台的模型倍率与价格" loading="lazy">
+                <figcaption>claude-opus-5 模型倍率 2.5、分组倍率 1，签到额度够用一整天</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ============ 接入教程 ============ -->
+    <section class="section reveal" id="setup">
+      <div class="section-head">
+        <span class="eyebrow">Setup</span>
+        <h2>如何在 Agent 工具里使用公益站的 API</h2>
+        <p class="section-desc">统一用 <strong>cc-switch</strong> 管理所有渠道，一键切换 Claude Code / Claude Desktop / Codex 的供应商，不用手动改配置文件。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <h3>下载安装 cc-switch</h3>
+          <p>跨平台桌面工具，支持 Claude Code、Codex、OpenCode 等客户端的供应商切换。</p>
+          <div class="copyrow"><span class="ck">下载页</span><code>https://github.com/farion1231/cc-switch/releases</code><button class="copy-btn">复制</button></div>
+          <p style="margin-top:8px"><a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">前往 Releases 下载 →</a>　仓库：<a href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener">farion1231/cc-switch</a>　官网：<a href="https://ccswitch.io" target="_blank" rel="noopener">ccswitch.io</a></p>
+        </div>
+
+        <div class="step">
+          <h3>在右上方选择对应的平台</h3>
+          <p>比如 <strong>Claude Code</strong>、<strong>Claude Desktop</strong> 和 <strong>Codex</strong>，不同平台的供应商列表是分开维护的，别加错地方。</p>
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/img/ccswitch-list.png" alt="cc-switch 供应商列表与顶部平台切换" loading="lazy">
+              <figcaption>顶部切换平台，下面就是该平台的供应商列表，点「启用」即生效</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>填写配置：API Key 与 API 请求地址</h3>
+          <p>主要修改 <strong>API Key</strong> 和 <strong>API 请求地址</strong>（一般是官网域名后加 <code class="inline">/v1</code>）。请求地址要填<strong>兼容 OpenAI Response 格式</strong>的服务端点地址；默认模型留空则沿用配置里的第一行。</p>
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/img/ccswitch-edit.png" alt="cc-switch 编辑供应商：官网链接、API Key、API 请求地址、默认模型" loading="lazy">
+              <figcaption>官网链接 + API Key + API 请求地址 + 默认模型，四项填对就能跑</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>必要时配置模型映射</h3>
+          <p>如果不是平台默认对应的模型，比如 <code class="inline">kimi-k3</code> 接入的时候需要修改<strong>模型映射</strong>。Claude Desktop 只接受 <code class="inline">claude-sonnet-*</code> / <code class="inline">claude-opus-*</code> / <code class="inline">claude-haiku-*</code> 三档角色 ID，开启映射后 cc-switch 会把这三档映射到供应商的实际模型。</p>
+          <p>Claude 系列模型需要<strong>勾选声明 1M 上下文</strong>，否则长上下文会被截断。</p>
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/img/ccswitch-mapping.png" alt="cc-switch 模型映射与 1M 上下文声明" loading="lazy">
+              <figcaption>Sonnet / Opus / Fable / Haiku 四档分别映射到实际模型，右侧勾选 1M</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>保存切换，重启 Agent 工具</h3>
+          <p>保存切换之后，<strong>关闭重新打开 Agent 工具</strong>，就能正常使用了。报错的话再根据错误提示进行分析 —— 常见原因是分组选错、请求地址少了 <code class="inline">/v1</code>、或者当前窗口额度已满。</p>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 评论 & 点赞 ============ -->
+    <section class="section reveal" id="comments">
+      <div class="section-head">
+        <span class="eyebrow">Community</span>
+        <h2>评论 &amp; 点赞</h2>
+        <p class="section-desc">攻略对你有帮助的话点个赞，让它能被更多人看到；知道其它免费 Token 渠道，欢迎直接在下面补充。</p>
+      </div>
+
+      <div class="engage">
+        <h3>这份攻略帮到你了吗？</h3>
+        <p>点赞是最直接的反馈，也是我持续更新的动力 💪</p>
+        <!-- LikeBtn.com BEGIN -->
+        <div class="likebtn-wrapper"
+             data-identifier="tokenfree-home"
+             data-theme="custom"
+             data-btn_size="41"
+             data-f_size="20"
+             data-icon_size="30"
+             data-icon_l="thmb4-u"
+             data-icon_l_c_v="#6366f1"
+             data-ef_voting="buzz"
+             data-show_like_label="false"
+             data-dislike_enabled="false"
+             data-counter_frmt="comma"
+             data-counter_count="true"
+             data-lang="zh_CN">
+        </div>
+        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+        <!-- LikeBtn.com END -->
+      </div>
+
+      <div class="callout info" style="margin-bottom:18px">
+        <span class="callout-ico">🔐</span>
+        <div>评论功能基于 <strong>GitHub Issues</strong>（Utterances），需要有 GitHub 账户并授权一次才能发表评论。你的评论会作为 Issue 保存在本站仓库里，可以随时编辑或删除。</div>
+      </div>
+
+      <!-- Utterances 评论系统（主题跟随站点，由 assets/js/main.js 注入） -->
+      <div class="comments-box" id="utterances"></div>
+    </section>
+
+  </div>
+</div>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark">T</span>
+          <span class="brand-text">TokenFree<small>TOKEN 自由攻略</small></span>
+        </a>
+        <p>分享稳定好用的大模型智能体词元来源，减小信息差，长期更新。内容整理自个人实测，各站策略随时可能调整，请以官网公告为准。</p>
+      </div>
+      <div class="footer-links">
+        <a href="#official">官方工具</a>
+        <a href="#paid">付费中转</a>
+        <a href="#free">免费公益</a>
+        <a href="#linuxdo">L 站专区</a>
+        <a href="#setup">接入教程</a>
+        <a href="#comments">评论区</a>
+        <a href="tokenfree-guide.pdf" target="_blank" rel="noopener">PDF 原版下载</a>
+        <a href="https://github.com/XinhanWang/tokenfree" target="_blank" rel="noopener">GitHub 仓库</a>
+        <a href="https://github.com/XinhanWang/tokenfree/issues" target="_blank" rel="noopener">提交渠道</a>
+      </div>
+    </div>
+
+    <div class="site-stats">
+      <div class="stat-item"><span class="stat-label">本站总访问量</span><span class="stat-value" id="busuanzi_value_site_pv">···</span></div>
+      <div class="stat-item"><span class="stat-label">本站访客数</span><span class="stat-value" id="busuanzi_value_site_uv">···</span></div>
+      <div class="stat-item"><span class="stat-label">本页访问量</span><span class="stat-value" id="busuanzi_value_page_pv">···</span></div>
+    </div>
+
+    <p class="copyright">
+      <span>&copy; 2026 TokenFree · 内容持续更新中</span>
+      <span>站内「注册直达」为邀请 / 推广链接。本站不售卖任何服务，也不为第三方站点的可用性与安全性背书，请自行判断风险。</span>
+    </p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片预览">
+  <button class="lightbox-close" id="lightboxClose" aria-label="关闭预览">×</button>
+  <img src="" alt="">
+</div>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
