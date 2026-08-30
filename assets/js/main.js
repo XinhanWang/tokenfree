@@ -20,7 +20,7 @@
   function applyTheme(theme) {
     html.setAttribute('data-theme', theme);
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', theme === 'dark' ? '#080b13' : '#f6f7fb');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#1b1b19' : '#f5f4ee');
     var btn = document.getElementById('themeBtn');
     if (btn) {
       btn.innerHTML = theme === 'dark' ? SUN : MOON;
