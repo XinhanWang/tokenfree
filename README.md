@@ -4,7 +4,7 @@
 
 线上地址：<https://wangxinhan.cn/tokenfree/>（`https://xinhanwang.github.io/tokenfree/` 会 301 跳到这里）
 Markdown 原文：[tokenfree-guide.md](tokenfree-guide.md)
-PDF 原版：<https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf>
+PDF 最新版：<https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf>
 
 ## 共同维护
 
@@ -17,10 +17,10 @@ PDF 原版：<https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf>
 
 | 板块 | 收录渠道 |
 | --- | --- |
-| 官方 Agent 工具 | Trae Code（原 Trae IDE）/ Trae Work |
-| 低价稳定的付费中转站 | AIHub、君的星辰 |
-| 无需 L 站账号的公益站 | JustDoWork、KK token、Agent Router、Rawchat |
-| 需 L 站账号的公益站 | Anyrouter（含 linux.do 注册方法） |
+| 官方 Agent 工具 | Trae CN（Trae Code / Work 已合并，每日签到 100 积分） |
+| 低价稳定的付费中转站 | 智纽（GPT Team 5* · 0.15 倍，推荐 GPT 6.1 Sol） |
+| 无需 L 站账号的公益站 | Agent Router（10:00 / 19:00 投放）、Rawchat |
+| 需 L 站账号的公益站 | Anyrouter（推荐 claude-opus-5-5，含 linux.do 注册方法） |
 | 接入教程 | cc-switch 配置 Claude Code / Claude Desktop / Codex |
 
 ## 目录结构
@@ -29,7 +29,7 @@ PDF 原版：<https://wangxinhan.cn/tokenfree/tokenfree-guide.pdf>
 tokenfree/
 ├── index.html              # 全部页面内容（单页）
 ├── tokenfree-guide.md      # Markdown 原文（图片指向 assets/img，可在 GitHub 直接阅读）
-├── tokenfree-guide.pdf     # 原版 PDF，供站内下载
+├── tokenfree-guide.pdf     # 最新版 PDF，供站内下载
 ├── sitemap.xml             # 站点地图
 ├── robots.txt              # 爬虫规则（见下方说明）
 ├── .nojekyll               # 跳过 Jekyll 处理
@@ -37,7 +37,7 @@ tokenfree/
 └── assets/
     ├── css/style.css       # 设计令牌 + 深浅色主题 + 组件样式
     ├── js/main.js          # 主题切换、目录高亮、筛选、复制、灯箱、Utterances、不蒜子兜底
-    └── img/*.png|jpg       # 17 张攻略截图
+    └── img/*.png|jpg       # 攻略截图与 Hero 插图
 ```
 
 ## SEO 与站点配置
@@ -64,6 +64,10 @@ tokenfree/
   需要在本仓库安装 [utterances GitHub App](https://github.com/apps/utterances)，且仓库为 public、Issues 开启，否则评论无法发布。
 - **LikeBtn**（点赞）— `index.html` 的 `.likebtn-wrapper`，通过 `data-*` 属性配置，`data-identifier="tokenfree-home"`。
 - **不蒜子**（访客统计）— 页脚三个 `busuanzi_value_*` 元素。主站点较常挂，`main.js` 里有镜像兜底：3.5 秒后若仍未填充数值，依次尝试 `busuanzi.9420.ltd` 与 `bsz.saodiyang.com`。
+
+## 当前版本（2026-10-13）
+
+Claude / GPT 上游风控收紧，付费稳定渠道作为主力，公益额度作为补充。此次更新替换了 Trae CN、智纽、Agent Router 和 Anyrouter 截图，同步网站、Markdown 与 PDF。
 
 ## 更新内容
 
