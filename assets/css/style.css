@@ -539,7 +539,7 @@ code.inline {
 .shots.narrow { max-width: 330px; margin: 18px auto 0; }
 figure.shot { margin: 0; }
 figure.shot img {
-  width: 100%; border-radius: var(--radius-sm);
+  width: 100%; height: auto; border-radius: var(--radius-sm);
   border: 1px solid var(--border); cursor: zoom-in;
   background: var(--code-bg);
   transition: border-color .22s ease, transform .22s ease;
